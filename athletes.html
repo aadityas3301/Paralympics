@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Paralympic Games Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #0066cc;
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #003366;
+            margin-top: 30px;
+            padding: 10px;
+            border-left: 5px solid #0066cc;
+            background-color: white;
+            border-radius: 0 5px 5px 0;
+        }
+
+        ol, ul {
+            background-color: white;
+            padding: 20px 40px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        li {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        /* Main list items */
+        ol > li, ul > li {
+            color: #333;
+            padding: 5px 0;
+        }
+
+        /* Nested lists */
+        li ul {
+            background-color: #f8f8f8;
+            margin-top: 5px;
+            box-shadow: none;
+        }
+
+        /* Bold athlete names */
+        b {
+            color: #0066cc;
+        }
+
+        /* Hover effects */
+        li:hover {
+            background-color: #f0f7ff;
+            transform: translateX(5px);
+            transition: all 0.3s ease;
+        }
+
+        /* Sports categories styling */
+        #sports-categories li {
+            list-style-type: disc;
+        }
+
+        /* Media query for mobile responsiveness */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            
+            ol, ul {
+                padding: 15px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Heading -->
+    <h1>Paralympic Games</h1>
+
+    <!-- Countries Section -->
+    <h2>Top Participating Countries</h2>
+    <ol>
+        <li>China
+            <ul>
+                <li>Gold medals in swimming</li>
+                <li>Strong in table tennis</li>
+                <li>Leading nation in athletics</li>
+            </ul>
+        </li>
+        <li>Great Britain
+            <ul>
+                <li>Excellent cycling team</li>
+                <li>Strong swimming program</li>
+                <li>Multiple medals in athletics</li>
+            </ul>
+        </li>
+        <li>United States
+            <ul>
+                <li>Dominant in wheelchair basketball</li>
+                <li>Strong track and field team</li>
+                <li>Excellence in swimming events</li>
+            </ul>
+        </li>
+    </ol>
+
+    <!-- Athletes Section -->
+    <h2>Famous Paralympic Athletes</h2>
+    <ul>
+        <li><b>Tatyana McFadden (USA)</b>
+            <ul>
+                <li>Sport: Wheelchair Racing</li>
+                <li>Multiple Paralympic gold medalist</li>
+            </ul>
+        </li>
+        <li><b>Daniel Dias (Brazil)</b>
+            <ul>
+                <li>Sport: Swimming</li>
+                <li>Most decorated male Paralympic swimmer</li>
+            </ul>
+        </li>
+        <li><b>Sarah Storey (Great Britain)</b>
+            <ul>
+                <li>Sports: Cycling and Swimming</li>
+                <li>Britain's most successful Paralympian</li>
+            </ul>
+        </li>
+    </ul>
+
+    <!-- Additional Information -->
+    <h2>Paralympic Sports Categories</h2>
+    <ul id="sports-categories">
+        <li>Summer Paralympic Sports
+            <ul>
+                <li>Athletics</li>
+                <li>Swimming</li>
+                <li>Wheelchair Basketball</li>
+                <li>Sitting Volleyball</li>
+            </ul>
+        </li>
+        <li>Winter Paralympic Sports
+            <ul>
+                <li>Para Alpine Skiing</li>
+                <li>Para Ice Hockey</li>
+                <li>Wheelchair Curling</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html> 

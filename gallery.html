@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paralympic Media Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Gallery Specific Styles */
+.gallery-section {
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-section h2 {
+    color: #0066cc;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.media-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.media-item:hover {
+    transform: translateY(-5px);
+}
+
+.media-item img,
+.media-item video {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.media-item audio {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.caption {
+    text-align: center;
+    color: #666;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .media-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-section {
+        padding: 1rem;
+    }
+}
+
+/* Existing styles from index.html */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0066cc;
+    color: white;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #0052a3;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+
+    <main>
+        <div class="container">
+            <!-- Images Section -->
+            <section class="gallery-section">
+                <h2>Paralympic Images</h2>
+                <div class="media-grid">
+                    <div class="media-item">
+                        <img src="path/to/paralympics1.jpg" alt="Paralympic athlete competing">
+                        <p class="caption">Athletics at Paralympics 2020</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="path/to/paralympics2.jpg" alt="Swimming competition">
+                        <p class="caption">Paralympic Swimming Event</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Videos Section -->
+            <section class="gallery-section">
+                <h2>Paralympic Videos</h2>
+                <div class="media-grid">
+                    <div class="media-item">
+                        <video controls>
+                            <source src="path/to/paralympics-highlights.mp4" type="video/mp4">
+                            Your browser does not support video playback.
+                        </video>
+                        <p class="caption">Paralympic Games Highlights</p>
+                    </div>
+                    <div class="media-item">
+                        <video controls>
+                            <source src="path/to/opening-ceremony.mp4" type="video/mp4">
+                            Your browser does not support video playback.
+                        </video>
+                        <p class="caption">Opening Ceremony Moments</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Audio Section -->
+            <section class="gallery-section">
+                <h2>Paralympic Audio</h2>
+                <div class="media-grid">
+                    <div class="media-item">
+                        <audio controls>
+                            <source src="path/to/paralympic-anthem.mp3" type="audio/mpeg">
+                            Your browser does not support audio playback.
+                        </audio>
+                        <p class="caption">Paralympic Anthem</p>
+                    </div>
+                    <div class="media-item">
+                        <audio controls>
+                            <source src="path/to/athlete-interview.mp3" type="audio/mpeg">
+                            Your browser does not support audio playback.
+                        </audio>
+                        <p class="caption">Athlete Interviews</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Paralympic Games. All rights reserved.</p>
+    </footer>
+</body>
+</html>

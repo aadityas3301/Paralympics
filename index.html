@@ -1,0 +1,239 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paralympics - Celebrating Athletic Excellence</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Header & Navigation */
+        
+        header {
+            background-color: #0066cc;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #0066cc;
+            margin-bottom: 1rem;
+        }
+
+        /* Featured & Highlights Sections */
+        .featured, .highlights {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Card Layout */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 20px;
+            width: calc(33% - 20px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0066cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ffd700;
+        }
+
+        .date {
+            font-size: 0.9rem;
+            color: #999;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="athletes.html">Athletes</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to Paralympics</h1>
+            <p>Celebrating extraordinary athletes and their remarkable achievements</p>
+        </section>
+
+        <section class="featured">
+            <h2>Featured Events</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="images/athletics.jpg" alt="Paralympic Athletics">
+                    <div class="card-content">
+                        <h3>Athletics</h3>
+                        <p>Track and field events showcasing speed, strength, and endurance.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/swimming.jpg" alt="Paralympic Swimming">
+                    <div class="card-content">
+                        <h3>Swimming</h3>
+                        <p>World-class swimmers competing across multiple disciplines.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/wheelchair-basketball.jpg" alt="Wheelchair Basketball">
+                    <div class="card-content">
+                        <h3>Wheelchair Basketball</h3>
+                        <p>High-intensity team sport showcasing skill and strategy.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="highlights">
+            <h2>Latest Highlights</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="images/news1.jpg" alt="World Record">
+                    <div class="card-content">
+                        <h3>New World Record</h3>
+                        <p>Amazing performance in the 100m sprint T64 category.</p>
+                        <span class="date">March 15, 2024</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/news2.jpg" alt="Team Victory">
+                    <div class="card-content">
+                        <h3>Historic Victory</h3>
+                        <p>Women's sitting volleyball team secures gold medal.</p>
+                        <span class="date">March 14, 2024</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/news3.jpg" alt="Upcoming Event">
+                    <div class="card-content">
+                        <h3>Preparation Update</h3>
+                        <p>Athletes gear up for the upcoming championship.</p>
+                        <span class="date">March 13, 2024</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Paralympics. All rights reserved.</p>
+    </footer>
+</body>
+</html>
